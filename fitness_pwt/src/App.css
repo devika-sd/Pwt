@@ -1,0 +1,325 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+  color: #797979;
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+  color: #343148;
+}
+
+a {
+  color: #454545;
+  transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #F7CAC9;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  max-width: 1366px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #F7CAC9;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 9;
+}
+
+.back-to-top:hover {
+  background: #343148;
+}
+
+.back-to-top:hover i {
+  color: #F7CAC9;
+}
+
+.back-to-top i {
+  color: #343148;
+  padding-top: 10px;
+}
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+  position: relative;
+  margin-bottom: 45px;
+  padding: 150px 0 90px 0;
+  text-align: center;
+  background: #F7CAC9;
+}
+
+.page-header h2 {
+  position: relative;
+  color: #343148;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.page-header a {
+  position: relative;
+  padding: 0 12px;
+  font-size: 22px;
+  color: #343148;
+}
+
+.page-header a:hover {
+  color: #ffffff;
+}
+
+.page-header a::after {
+  position: absolute;
+  content: "/";
+  width: 8px;
+  height: 8px;
+  top: -2px;
+  right: -7px;
+  text-align: center;
+  color: #343148;
+}
+
+.page-header a:last-child::after {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .page-header h2 {
+      font-size: 35px;
+  }
+  
+  .page-header a {
+      font-size: 18px;
+  }
+}
+/*******************************/
+/******* body Header CSS *******/
+/*******************************/
+.body-header {
+  position: relative;
+  margin-bottom: 45px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+  background: #F7CAC9;
+}
+
+.page-header h2 {
+  position: relative;
+  color: #343148;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.page-header a {
+  position: relative;
+  padding: 0 12px;
+  font-size: 22px;
+  color: #343148;
+}
+
+.page-header a:hover {
+  color: #ffffff;
+}
+
+.page-header a::after {
+  position: absolute;
+  content: "/";
+  width: 8px;
+  height: 8px;
+  top: -2px;
+  right: -7px;
+  text-align: center;
+  color: #343148;
+}
+
+.page-header a:last-child::after {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .page-header h2 {
+      font-size: 35px;
+  }
+  
+  .page-header a {
+      font-size: 18px;
+  }
+}
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.section-header p {
+  display: inline-block;
+  margin: 0 30px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ffffff;
+}
+
+.section-header p::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 11px;
+  right: -30px;
+  left: -30px;
+  background: #F7CAC9;
+  z-index: -1;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+      font-size: 30px;
+  }
+}
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+.team .team-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, .07);
+}
+
+.team .team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-img img {
+  position: relative;
+  width: 100%;
+}
+
+.team .trainer-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.team .trainer-social a {
+  position: relative;
+  margin: 0 3px;
+  margin-top: 100px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  font-size: 13px;
+  color: #F7CAC9;
+  background: #343148;
+  opacity: 0;
+}
+
+.team .trainer-social a:hover {
+  color: #343148;
+  background: #F7CAC9;
+}
+
+
+.team .team-item:hover .trainer-social {
+  background: rgba(256, 256, 256, .5);
+}
+
+.team .team-item:hover .trainer-social a:first-child {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s 0s;
+}
+
+.team .team-item:hover .trainer-social a:nth-child(2) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .1s;
+}
+
+.team .team-item:hover .trainer-social a:nth-child(3) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .2s;
+}
+
+.team .team-item:hover .trainer-social a:nth-child(4) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .3s;
+}
+
+.team .team-text {
+  position: relative;
+  padding: 25px 15px 10px 15px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.team .team-text h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team .team-text p {
+  margin: 0;
+}
+
